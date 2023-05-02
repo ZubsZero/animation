@@ -1,0 +1,151 @@
+* {
+  color: white;
+}
+
+body {
+  background-image: url(./images/background\ jpg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.benten {
+  
+  font-size: 40px;
+  padding: 300px;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow ease-in-out infinite alternate;
+  animation-duration: 0.1s;
+ 
+
+}
+@-webkit-keyframes glow {
+  100% {
+    text-shadow: 0 0 4px #000000, 0 0 10px #000000, 0 0 19px #275b0a, 0 0 21px #275b0a;
+  }
+  0% {
+    text-shadow: 0 0 4px #000000, 0 0 10px #000000, 0 0 19px #275b0a, 0 0 21px #275b0a;
+  }
+}
+header {
+  background-color: black;
+  max-width: 100%;
+  padding-top: 1px;
+  text-align: center;
+}
+
+.topnav a {
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  padding: 6px;
+  border: 1px solid rgb(8, 70, 7);
+  border-radius: 40px;
+  width: 15%;
+  
+}
+
+ul {
+  list-style: none;
+  align-items: center;
+  background: black;
+  font-size: 30px;
+
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .ben-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .ben-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .ben-card-front, .ben-card-back {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .ben-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .ben-card-back {
+    background-color: #035210;
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+  }
+
+  .ben {
+    width: 300px;
+    height: 300px;
+  }
+
+  .flip-card2{
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .gwen-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card2:hover .gwen-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .gwen-card-front, .gwen-card-back {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .gwen-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .gwen-card-back {
+    background-color: #035210;
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+  }
+
+  .gwen {
+    width: 300px;
+    height: 300px;
+  }
+
+
